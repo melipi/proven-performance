@@ -33,9 +33,12 @@
                 <li class="menu-item"><a href="#contact">Contact</a></li>
               </ul>
           </nav>
-        </div>
-        <div id="ham-wrapper" class="">
-          <p class="ham"></p>
+          <button aria-hidden="true" focusable="false" id="ham-wrapper">
+            <i data-fa-symbol="ham" class="fas fa-bars"></i>
+            <i data-fa-symbol="minus" class="fas fa-minus"></i>
+            <svg class="ham"><use xlink:href="#ham"></use></svg>
+            <svg class="minus show-minus"><use xlink:href="#minus"></use></svg>
+          </button>
         </div>
       </header>
     </div>

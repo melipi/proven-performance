@@ -16,8 +16,10 @@ const displayCurrentYear = () => {
 
 const ham = document.getElementById("ham-wrapper");
 const menu = document.querySelector(".navbar");
+const minus = document.querySelector(".minus")
 
 ham.addEventListener("click", (e) => {
   ham.classList.toggle("open");
   menu.classList.toggle("show");
+  minus.classList.toggle("show-minus");
 })

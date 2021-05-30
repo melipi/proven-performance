@@ -132,6 +132,10 @@ p {
   color: #262626;
 }
 
+.fa-map-marker-alt {
+  margin-right: .5em;
+}
+
 /*  FLATICON STYLES  */
 
 .flaticon-technical,
@@ -226,13 +230,14 @@ p {
 
 #ham-wrapper {
   display: none;
+  overflow: hidden;
 }
 
 /*  MOBILE MENU  */
 
 @media (max-width: 859px) {
    #ham-wrapper {
-    display: inline-block;
+    display: block;
   }
 
   .ham {
@@ -240,39 +245,35 @@ p {
     z-index: 100;
     top: 75px;
     right: 20px;
-    height: 50px;
-    width: 50px;
+    height: 3em;
+    width: 3em;
+    padding: .5em;
     background: #fff;
+    color: #ff3115;
     cursor: pointer;
     border: 2px solid #000;
   }
 
-  .ham::before {
-    content:'\f0c9';
-    font-family: fontAwesome;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    line-height: 48px;
-    text-align: center;
-    font-size: 25px;
+  .minus {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 75px;
+    right: 20px;
+    height: 3em;
+    width: 3em;
+    padding: .5em;
+    background: #fff;
     color: #ff3115;
-}
-
-  .open .ham::before {
-    content: '\f068';
-    font-family: fontAwesome;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    line-height: 48px;
-    text-align: center;
-    font-size: 25px;
-    color: #ff3115;
-    transition: width .3s .5s ease, border-radius 1.1s ease;
+    cursor: pointer;
+    border: 2px solid #000;
   }
-  
+
   .navbar {
+    position: absolute;
+    z-index: 100;
+    top: 150px;
+    right: 0px;
     display: none;
     justify-content: space-evenly;
     width: 100%;
@@ -281,12 +282,8 @@ p {
   }
 
   .nav-items {
-    position: absolute;
-    z-index: 100;
-    top: 150px;
-    right: 0px;
+    overflow: hidden;
   }
-
   .nav-items>li>a {
     padding: 0px;
     text-decoration: none;
@@ -296,6 +293,11 @@ p {
 
   .show {
     display: flex;
+    overflow: hidden;
+  }
+
+  .show-minus {
+    display: none;
   }
 }
 
