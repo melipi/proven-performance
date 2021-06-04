@@ -23,3 +23,6 @@ ham.addEventListener("click", (e) => {
   menu.classList.toggle("show");
   minus.classList.toggle("show-minus");
 })
+
+//  STICKY HEADER ON SCROLL
+

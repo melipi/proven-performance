@@ -7,31 +7,29 @@
     <link rel="stylesheet" type="text/css" href="/css/flaticon.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ef32147bf9.js" crossorigin="anonymous"></script>
-    <title>Proven Performance | Miami's Premier ATV Repair Shop</title>
+    <title>Proven Performance | Miami's Top ATV Repair Shop</title>
 </head>
 <body class="container">
-    <div class="header-wrapper" id="home">
-      <div class="top-bar">
-        <div class="width-container inner-top-bar">
-          <address class="top-bar-address">
-            <i class="fas fa-map-marker-alt"></i>
-            <span class="info-text">10610 NW 123 ST Road. Medley, FL 33178</span>
-          </address>
-
+    <div class="hero-image">
+      <header>
+        <div class="top-bar">
+          <div class="width-container inner-top-bar">
+            <address class="top-bar-address">
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="info-text">10610 NW 123 ST Road. Medley, FL 33178</span>
+            </address>
+          </div>
         </div>
-      </div>
-      <header class="header-wrapper">
         <div class="width-container top-header">
           <img class="logo"
-          src="/images/proven-performance-outline.svg"
+          src="/images/proven-performance-logo.svg"
           alt="Proven Performance Logo">
-            <nav>
-              <ul class="navbar nav-items">
-                <li class="menu-item"><a href="#home">Home</a></li>
-                <li class="menu-item"><a href="#about">About</a></li>
-                <li class="menu-item"><a href="#services">Services</a></li>
-                <li class="menu-item"><a href="#contact">Contact</a></li>
-              </ul>
+          <nav>
+            <ul class="navbar nav-items">
+              <li class="menu-item"><a href="#about">About</a></li>
+              <li class="menu-item"><a href="#services">Services</a></li>
+              <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
           </nav>
           <button aria-hidden="true" focusable="false" id="ham-wrapper">
             <i data-fa-symbol="ham" class="fas fa-bars"></i>
@@ -41,26 +39,17 @@
           </button>
         </div>
       </header>
-    </div>
-   
-  <main>
-    <div class="main hero-image">
-      <section class="width-container hero-banner">
-        <h2 class="hero-text">Want to be this fast?</h2>
-        <h3 class="hero-text subheading">Call or text us</h3>
-        <div class="hero-call">
-          <a href="tel:786-627-7337">
-            <h2 class="hero-text spacing-phone hero-button">(786) 627-7337</h2>
-        </a>
-        </div>
-      </section>
-    </div>
-    <div class="call-to-action" id="about">
-      <section class="width-container">
-        <i class="fas fa-crown"></i>
-        <h1 class="hero-text">We are Miami's Premier ATV Repair Shop</h1>
-        <p class="hero-text">We specialize in all things ATV and small motor vehicles. We take pride in our work and let it speak for itself.</p>
-      </section>
+      <main>
+        <section class="hero-banner">
+          <div class="split">
+            <div class="split-format-left-side">
+              <span class="h1 hero-text">Get your ATV in top shape fast</span>
+              <span class="separator"></span>
+            </div>
+            <h3 class="tagline split-format-right-side">Miami's Top ATV Repair Shop</h3>
+          </div>
+          <p class="hero-text hero-subtext">Proven Performance of Miami, FL will get your ATV or small motor vehicle in top shape, fast. We offer everything from a quick oil change to specialized dyno tuning to get you ready for the trails, the dunes or the racetrack. </p>
+        </section>
     </div>
     <div class="services" id="services">
       <section class="width-container">
@@ -83,11 +72,21 @@
         </div>
       </section>
     </div>
+    <div class="call-to-action" id="contact">
+      <section class="width-container">
+          <div class="cta-container">
+            <h1 class="hero-text cta-text">Want to be this fast?</h1>
+            <a href="tel:786-627-7337">
+              <button class="h3 tagline hero-call">Call or text</button>
+            </a>
+          </div>
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
     <div class="width-container">
-      <div class="socials-container">
+      <section class="socials-container">
         <div class="info-text socials-text">Follow Us</div>
         <span class="socials">
           <i data-fa-symbol="facebook" class="fab fa-facebook-f"></i>
@@ -103,9 +102,31 @@
             <svg class="social-icon"><use xlink:href="#youtube"></use></svg>
           </a>
         </span>
-      </div>
-        <span class="info-text">© Copyright <span id="year"></span>. All Rights Reserved.</span>
+      </section>
+      <section class="contact">
+        <div>
+          <i data-fa-symbol="map" class="fas fa-map-marker-alt"></i>
+          <svg class="footer-icon"><use xlink:href="#map"></use></svg>
+          <h4 class="inline">Address</h4>
+          <address class="info-text">10610 NW 123 ST Road. Medley, FL 33178</address>
+          <i data-fa-symbol="phone" class="fas fa-phone"></i>
+          <svg class="footer-icon"><use xlink:href="#phone"></use></svg>
+          <h4 class="inline phone">Phone</h4>
+          <address class="info-text">(786) 627-7337</address>
+        </div>
+        <div>
+          <i data-fa-symbol="clock" class="fas fa-clock"></i>
+          <svg class="footer-icon"><use xlink:href="#clock"></use></svg>
+          <h4 class="inline">Hours</h4>
+          <address class="info-text">Monday-Friday: 9AM - 5PM</address>
+          <address class="info-text">Saturday: 12PM - 5PM</address>
+          <address class="info-text">Sunday: By appointment only</address>
+        </div>
+      </section>
     </div>
+    <section class="bottom-footer">
+      <p class="info-text">© Copyright <span id="year"></span>. All Rights Reserved.</p>
+    </section>
   </footer>
   <script src="script.js"></script>
 </body>
