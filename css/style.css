@@ -281,9 +281,10 @@ p {
   flex-flow: column nowrap;
   justify-content: center;
   padding-bottom: 20px;
-  width: 100%; 
+  margin: 0 auto;
+  width: 800px; 
   height: calc(100vh - 150px); 
-  min-width: 100%; 
+  min-width: 800px; 
   min-height: 100%; 
 }
 
@@ -309,7 +310,6 @@ p {
 .split-format-left-side {
   display: block;
   position: relative;
-  flex: 0 0 35vw;
   line-height: 40px;
   text-align: right;
   padding: 0 30px;
@@ -318,7 +318,6 @@ p {
 .split-format-right-side {
   display: block;
   position: relative;
-  flex: 0 1 35vw;
 }
 
 .separator {
@@ -548,6 +547,11 @@ footer {
     padding: 0 3em;
     text-align: center;
   }
+
+  .separator {
+    display: none;
+  }
+
   .split-format-right-side {
     padding-top: .75em;
     padding-left: 2em;
