@@ -572,13 +572,17 @@ footer {
     margin-top: 1em;
   }
   .contact {
-    padding: 50px 0;
+    padding: 50px;
   }
 }
 
 /*  MOBILE STYLES FOR iPHONE S/SE  */ 
 
 @media (max-width: 349px) {
+  .info-text {
+    font-size: 12px;
+  }
+
   .h1 {
     font-size: 36px;
   }
@@ -592,7 +596,27 @@ footer {
   }
 
   .logo {
-    width: 225px;
+    width: 200px;
+  }
+
+  .navbar {
+    top: 130px;
+    padding: 0;
+  }
+
+  .split-format-left-side {
+    padding: 0 2em;
+  }
+
+  .split-format-right-side {
+    padding-top: .75em;
+    padding-left: 0;
+    padding-right: .75em;
+    text-align: center;
+  }
+
+  .hero-subtext {
+    padding: 0 30px;
   }
 
   .cta-text {
