@@ -14,15 +14,14 @@ const displayCurrentYear = () => {
 
 //  HAMBURGER MENU - TOGGLE
 
-const ham = document.getElementById("ham-wrapper");
+const hamContainer = document.getElementById("ham-wrapper");
+const ham = document.querySelector(".ham");
 const menu = document.querySelector(".navbar");
 const minus = document.querySelector(".minus")
 
-ham.addEventListener("click", (e) => {
-  ham.classList.toggle("open");
+hamContainer.addEventListener("click", (e) => {
+  hamContainer.classList.toggle("open");
+  ham.classList.toggle("hide");
   menu.classList.toggle("show");
-  minus.classList.toggle("show-minus");
+  minus.classList.toggle("hide");
 })
-
-//  STICKY HEADER ON SCROLL
-
