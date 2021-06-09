@@ -182,7 +182,7 @@ a:hover {
 
 .ptb {
   padding-top: 1em;
-  padding-bottom: .5em;
+  padding-bottom: .25em;
 }
 
 /*  HEADER  */
@@ -652,6 +652,7 @@ footer {
 
   .call-btn {
     width: 50vw;
+    font-size: 1.1em;
     margin-top: 1em;
   }
 
@@ -717,5 +718,6 @@ footer {
 
   .call-btn {
     width: 80vw;
+    font-size: 1.25em;
   }
 }
