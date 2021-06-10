@@ -189,8 +189,6 @@ a:hover {
 
 .top-bar {
   position: relative;
-  display: flex;
-  flex-flow: column wrap;
   height: 50px;
   line-height: 50px;
   max-width: 100%;
@@ -521,7 +519,7 @@ footer {
   display: inline-block;
 }
 
-.footer-icon {
+.icon {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -657,7 +655,7 @@ footer {
   }
 
   .contact {
-    grid-gap: 1em;
+    grid-gap: .25em;
   }
 }
 
