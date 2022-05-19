@@ -26,7 +26,7 @@ button {
 /*  FONTS  */
 
 body {
-  font-family: 'Rajdhani', 'Helvetica', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', 'Helvetica', sans-serif;
   font-weight: 500;
   line-height: 2em;
   color: #444;
@@ -51,14 +51,9 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 .h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+.h3
+{
 	font-family: 'Teko', Tahoma, Arial, Helvetica, sans-serif;
 	font-weight: 600;
   text-transform: uppercase;
@@ -85,23 +80,13 @@ h4,
 	font-size: 20px
 }
 
-h5,
-.h5 {
-	font-size: 18px
-}
-
-h6,
-.h6 {
-	font-size: 16px
-}
-
 .tagline {
   position: relative;
-  line-height: 1.1em;
-  font-weight: 700;
+  line-height: .9em;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 1.3em;
-  letter-spacing: .4em;
+  letter-spacing: 2px;
   text-align: left;
   color: #ff3115;
 }
@@ -156,6 +141,21 @@ a:hover {
 .flaticon-speed {
   font-size: 100px;
   color: #ff3115;
+}
+
+/* SCROLLBAR STYLING */
+
+body::-webkit-scrollbar {
+  width: .5em;
+}
+ 
+body::-webkit-scrollbar-track {
+  background-color: #101010;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, .25);
 }
 
 /*  PAGE STRUCTURE  */
@@ -266,7 +266,7 @@ a:hover {
 .hero-image {
   width: 100%;
   position: relative;
-  background-image: url(../images/proven-performance-hero-bg.jpg);
+  background-image: url(../images/proven-performance-bike-front.png);
   background-origin: initial;
   background-position: top center; 
   background-repeat: no-repeat;
@@ -281,7 +281,7 @@ a:hover {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0,0,0,0.5);
 }
 
 .hero-text {
@@ -298,7 +298,7 @@ a:hover {
   padding-bottom: 20px;
   margin: 0 auto;
   width: 800px;
-  height: calc(100vh - 150px); 
+  height: 50vh; 
   max-width: 100%;
   min-height: 100%; 
 }
@@ -366,7 +366,7 @@ a:hover {
 }
 
 .about-atv-img {
-  max-width: 100vw;
+  max-width: 90vw;
 }
 
 .tagline-body {
@@ -497,10 +497,10 @@ footer {
 .contact {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 6em;
-  padding: 2em;
+  grid-gap: 2em;
+  padding: 2em 2em 2em 8em;
   margin: 0 auto;
-  width: 80vw;
+  width: 800px;
   max-width: 100%;
 }
 
@@ -548,7 +548,7 @@ footer {
     position: absolute;
     z-index: 100;
     top: 6em;
-    right: 1.25em;
+    right: 2.5em;
     height: 3em;
     width: 3em;
     padding: .5em;
@@ -561,7 +561,7 @@ footer {
     position: absolute;
     z-index: 100;
     top: 6em;
-    right: 1.25em;
+    right: 2.5em;
     height: 3em;
     width: 3em;
     padding: .5em;
@@ -600,7 +600,7 @@ footer {
   }
 
   .tagline {
-    font-size: 1em;
+    font-size: 1.25em;
   }
 
   .services-container {
@@ -618,7 +618,7 @@ footer {
   }
 
   .split-format-left-side {
-    width: 90vw;
+    max-width: 75vw;
     margin: 0 auto;
     text-align: center;
     padding-right: 0;
@@ -680,7 +680,7 @@ footer {
   }
 
   .tagline {
-    font-size: .7em;
+    font-size: .8em;
   }
 
   .hero-banner > p {
