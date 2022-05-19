@@ -94,6 +94,7 @@ h4,
 .heading {
   color: #000;
   text-align: center;
+  line-height: 55px;
 }
 
 a,
@@ -498,15 +499,19 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 2em;
-  padding: 2em 2em 2em 6em;
+  padding: 2em;
   margin: 0 auto;
   width: 800px;
   max-width: 100%;
 }
 
-/* .phone {
-  margin-top: 1em;
-} */
+.contact-left {
+  padding-left: 5em;
+}
+
+.contact-right {
+  padding-left: 2em;
+}
 
 .bottom-footer {
   display: flex;
@@ -655,7 +660,16 @@ footer {
   }
 
   .contact {
+    width: 350px;
     grid-gap: .25em;
+  }
+
+  .contact-left {
+    padding-left: 0;
+  }
+  
+  .contact-right {
+    padding-left: 0;
   }
 }
 
@@ -717,5 +731,10 @@ footer {
   .call-btn {
     width: 80vw;
     font-size: 1.25em;
+  }
+
+  .contact {
+    width: 350px;
+    grid-gap: .25em;
   }
 }
