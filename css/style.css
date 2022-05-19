@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Rajdhani:wght@700&family=Source+Sans+Pro&family=Teko&display=swap');
-
-
 /*  STYLE RESETS  */
 * {
   margin: 0;
@@ -29,7 +26,8 @@ button {
 /*  FONTS  */
 
 body {
-  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  font-family: 'Rajdhani', 'Helvetica', sans-serif;
+  font-weight: 500;
   line-height: 2em;
   color: #444;
 }
@@ -314,6 +312,8 @@ a:hover {
 
 .hero-subtext {
   width: 70%;
+  text-transform: uppercase;
+  font-weight: 500;
   margin: 0 auto;
   padding: 0 50px;
 }
